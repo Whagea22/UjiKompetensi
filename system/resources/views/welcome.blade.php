@@ -124,32 +124,14 @@
             <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="150">
                 <div class="col-xl-6 col-lg-8">
                     <h2>Selamat Datang di Pelayanan Pernikahan Terbaik</h2>
+                    <br>
                     <h1><u>See Planner</u></h1>
+                    <br>
                     <h2>"Dengan bangga kami menyambut Anda ke dalam pelayanan pernikahan terbaik. Bersama-sama, kita
                         akan menciptakan pernikahan tak terlupakan."</h2>
                 </div>
             </div>
 
-            {{-- <div class="row gy-4 mt-5 justify-content-center" data-aos="zoom-in" data-aos-delay="250">
-                <div class="col-xl-2 col-md-4">
-                    <div class="icon-box">
-                        <i class="ri-store-line"></i>
-                        <h3><a href="">Foto Weddning</a></h3>
-                    </div>
-                </div>
-                <div class="col-xl-2 col-md-4">
-                    <div class="icon-box">
-                        <i class="ri-bar-chart-box-line"></i>
-                        <h3><a href="">Foto Pre Wedding</a></h3>
-                    </div>
-                </div>
-                <div class="col-xl-2 col-md-4">
-                    <div class="icon-box">
-                        <i class="ri-calendar-todo-line"></i>
-                        <h3><a href="">Dacoration Wedding</a></h3>
-                    </div>
-                </div>
-            </div> --}}
         </div>
     </section><!-- End Hero -->
 
@@ -193,40 +175,9 @@
     </ul> --}}
 
     <main id="main">
-
-        <!-- ======= About Section ======= -->
         <section id="about" class="about">
             <div class="container" data-aos="fade-up">
-
-                <div class="row">
-                    <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-left" data-aos-delay="100">
-                        <img src="{{ url('public/landingpage') }}/assets/img/bg_2.jpg" class="img-fluid"
-                            alt="">
-                    </div>
-                    <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content" data-aos="fade-right"
-                        data-aos-delay="100">
-                        <h3>About Us.</h3>
-                        <p class="fst-italic">
-                            See Planner adalah pionir dalam industri pernikahan yang berkomitmen untuk mewujudkan impian
-                            pasangan mempelai dengan sempurna. Sejak berdiri, perusahaan kami telah menjadi tonggak
-                            penting dalam mengatur dan mengoordinasikan pernikahan yang tak terlupakan. Dengan dedikasi,
-                            pengalaman, dan inovasi yang kami bawa selama bertahun-tahun, kami telah membangun reputasi
-                            yang tak tertandingi dalam membawa kebahagiaan kepada pasangan yang akan menikah. Adapun
-                            bidang-bidang yang kami kuasai :
-                        </p>
-                        <ul>
-                            <li><i class="ri-check-double-line"></i> Foto wedding</li>
-                            <li><i class="ri-check-double-line"></i> Desain dan Dekorasi: Keindahan adalah salah satu
-                                fokus utama kami. Tim desain kami menciptakan tema dan konsep visual yang unik sesuai
-                                dengan selera pasangan.</li>
-                            <li><i class="ri-check-double-line"></i> Foto Pre wedding.</li>
-                        </ul>
-                        <p>
-                            Perusahaan ini dibangun pada tahun 2018, dan sudah berjalan salam 5 tahun terakhir.
-                        </p>
-                    </div>
-                </div>
-
+                @include('about')
             </div>
         </section><!-- End About Section -->
 
@@ -235,72 +186,14 @@
             <div class="container" data-aos="zoom-in">
 
                 <div class="clients-slider swiper">
-                    <div class="swiper-wrapper align-items-center">
-                        <div class="swiper-slide"><img
-                                src="{{ url('public/landingpage') }}/assets/img/clients/client-1.png" class="img-fluid"
-                                alt=""></div>
-                        <div class="swiper-slide"><img
-                                src="{{ url('public/landingpage') }}/assets/img/clients/client-2.png" class="img-fluid"
-                                alt=""></div>
-                        <div class="swiper-slide"><img
-                                src="{{ url('public/landingpage') }}/assets/img/clients/client-3.png" class="img-fluid"
-                                alt=""></div>
-                        <div class="swiper-slide"><img
-                                src="{{ url('public/landingpage') }}/assets/img/clients/client-4.png"
-                                class="img-fluid" alt=""></div>
-                        <div class="swiper-slide"><img
-                                src="{{ url('public/landingpage') }}/assets/img/clients/client-5.png"
-                                class="img-fluid" alt=""></div>
-                        <div class="swiper-slide"><img
-                                src="{{ url('public/landingpage') }}/assets/img/clients/client-6.png"
-                                class="img-fluid" alt=""></div>
-                        <div class="swiper-slide"><img
-                                src="{{ url('public/landingpage') }}/assets/img/clients/client-7.png"
-                                class="img-fluid" alt=""></div>
-                        <div class="swiper-slide"><img
-                                src="{{ url('public/landingpage') }}/assets/img/clients/client-8.png"
-                                class="img-fluid" alt=""></div>
-                    </div>
-                    <div class="swiper-pagination"></div>
+                    @include('client')
                 </div>
-
             </div>
-        </section><!-- End Clients Section -->
+        </section>
 
-        <!-- ======= Features Section ======= -->
-        {{-- <section id="features" class="features">
-            <div class="container" data-aos="fade-up">
-
-                <div class="row">
-                    <div class="image col-lg-6"
-                        style='background-image: url("{{ url('public/landingpage') }}/assets/img/portfolio/bg_18.jpg");'
-                        data-aos="fade-right"></div>
-                    <div class="col-lg-6" data-aos="fade-left" data-aos-delay="100">
-                        <div class="icon-box mt-5 mt-lg-0" data-aos="zoom-in" data-aos-delay="150">
-                            <i class="bx bx-receipt"></i>
-                            <h4></h4>
-                            <p>Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut aliquip</p>
-                        </div>
-                        <div class="icon-box mt-5" data-aos="zoom-in" data-aos-delay="150">
-                            <i class="bx bx-cube-alt"></i>
-                            <h4>Harum esse qui</h4>
-                            <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
-                        </div>
-                        <div class="icon-box mt-5" data-aos="zoom-in" data-aos-delay="150">
-                            <i class="bx bx-images"></i>
-                            <h4>Aut occaecati</h4>
-                            <p>Aut suscipit aut cum nemo deleniti aut omnis. Doloribus ut maiores omnis facere</p>
-                        </div>
-                        <div class="icon-box mt-5" data-aos="zoom-in" data-aos-delay="150">
-                            <i class="bx bx-shield"></i>
-                            <h4>Beatae veritatis</h4>
-                            <p>Expedita veritatis consequuntur nihil tempore laudantium vitae denat pacta</p>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </section><!-- End Features Section --> --}}
+        <section id="features" class="features">
+            @include('profile')
+        </section>
 
         <!-- ======= Services Section ======= -->
         {{-- <section id="services" class="services">
@@ -407,174 +300,8 @@
                 </div>
 
                 <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
-
-                    <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-                        <div class="portfolio-wrap">
-                            <img src="{{ url('public/landingpage') }}/assets/img/portfolio/bg_6.jpg"
-                                class="img-fluid" alt="">
-                            <div class="portfolio-info">
-                                <h4>Paket 1</h4>
-                                <p>Wedding</p>
-                                <div class="portfolio-links">
-                                    <a href="{{ url('public/landingpage') }}/assets/img/portfolio/bg_6.jpg"
-                                        data-gallery="portfolioGallery" class="portfolio-lightbox"
-                                        title="Foto Wedding 250x foto = Rp. 6.500.000,00"><i
-                                            class="bx bx-plus"></i></a>
-                                    <a href="portfolio-details.html" title="More Details"><i
-                                            class="bx bx-link"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-                        <div class="portfolio-wrap">
-                            <img src="{{ url('public/landingpage') }}/assets/img/portfolio/bg_19.jpg"
-                                class="img-fluid" alt="">
-                            <div class="portfolio-info">
-                                <h4>Decoration 3</h4>
-                                <p>Jl. DI.Penjaitan</p>
-                                <div class="portfolio-links">
-                                    <a href="{{ url('public/landingpage') }}/assets/img/portfolio/bg_19.jpg"
-                                        data-gallery="portfolioGallery" class="portfolio-lightbox"
-                                        title="Rp. 8.200.000,00"><i class="bx bx-plus"></i></a>
-                                    <a href="portfolio-details.html" title="More Details"><i
-                                            class="bx bx-link"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-                        <div class="portfolio-wrap">
-                            <img src="{{ url('public/landingpage') }}/assets/img/portfolio/bg_17.jpg"
-                                class="img-fluid" alt="">
-                            <div class="portfolio-info">
-                                <h4>Paket 2</h4>
-                                <p>Wedding</p>
-                                <div class="portfolio-links">
-                                    <a href="{{ url('public/landingpage') }}/assets/img/portfolio/bg_17.jpg"
-                                        data-gallery="portfolioGallery" class="portfolio-lightbox"
-                                        title="foto wedding + decorasi = Rp. 26.600.000,00"><i
-                                            class="bx bx-plus"></i></a>
-                                    <a href="portfolio-details.html" title="More Details"><i
-                                            class="bx bx-link"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-                        <div class="portfolio-wrap">
-                            <img src="{{ url('public/landingpage') }}/assets/img/portfolio/bg_10.jpg"
-                                class="img-fluid" alt="">
-                            <div class="portfolio-info">
-                                <h4>Paket 4</h4>
-                                <p>Pre Wedding</p>
-                                <div class="portfolio-links">
-                                    <a href="{{ url('public/landingpage') }}/assets/img/portfolio/portfolio-4.jpg"
-                                        data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 2"><i
-                                            class="bx bx-plus"></i></a>
-                                    <a href="portfolio-details.html" title="More Details"><i
-                                            class="bx bx-link"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-                        <div class="portfolio-wrap">
-                            <img src="{{ url('public/landingpage') }}/assets/img/portfolio/bg_15.jpg"
-                                class="img-fluid" alt="">
-                            <div class="portfolio-info">
-                                <h4>Decoration 2</h4>
-                                <p>Jl. S.Parman</p>
-                                <div class="portfolio-links">
-                                    <a href="{{ url('public/landingpage') }}/assets/img/portfolio/bg_15.jpg"
-                                        data-gallery="portfolioGallery" class="portfolio-lightbox"
-                                        title="Rp. 18.000.000,00"><i class="bx bx-plus"></i></a>
-                                    <a href="portfolio-details.html" title="More Details"><i
-                                            class="bx bx-link"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-                        <div class="portfolio-wrap">
-                            <img src="{{ url('public/landingpage') }}/assets/img/portfolio/bg_21.jpg"
-                                class="img-fluid" alt="">
-                            <div class="portfolio-info">
-                                <h4>Paket 3</h4>
-                                <p>Wedding</p>
-                                <div class="portfolio-links">
-                                    <a href="{{ url('public/landingpage') }}/assets/img/portfolio/bg_21.jpg"
-                                        data-gallery="portfolioGallery" class="portfolio-lightbox"
-                                        title="Rp. 5.550.000,00"><i class="bx bx-plus"></i></a>
-                                    <a href="portfolio-details.html" title="More Details"><i
-                                            class="bx bx-link"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-                        <div class="portfolio-wrap">
-                            <img src="{{ url('public/landingpage') }}/assets/img/portfolio/bg_12.jpg"
-                                class="img-fluid" alt="">
-                            <div class="portfolio-info">
-                                <h4>Paket 5</h4>
-                                <p>Pre Wedding</p>
-                                <div class="portfolio-links">
-                                    <a href="{{ url('public/landingpage') }}/assets/img/portfolio/bg_12.jpg"
-                                        data-gallery="portfolioGallery" class="portfolio-lightbox"
-                                        title="Rp. 6.600.000,00"><i class="bx bx-plus"></i></a>
-                                    <a href="portfolio-details.html" title="More Details"><i
-                                            class="bx bx-link"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-                        <div class="portfolio-wrap">
-                            <img src="{{ url('public/landingpage') }}/assets/img/portfolio/bg_20.jpg"
-                                class="img-fluid" alt="">
-                            <div class="portfolio-info">
-                                <h4>Paket 6</h4>
-                                <p>Pre Wedding</p>
-                                <div class="portfolio-links">
-                                    <a href="{{ url('public/landingpage') }}/assets/img/portfolio/bg_20.jpg"
-                                        data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 3"><i
-                                            class="bx bx-plus"></i></a>
-                                    <a href="portfolio-details.html" title="More Details"><i
-                                            class="bx bx-link"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-                        <div class="portfolio-wrap">
-                            <img src="{{ url('public/landingpage') }}/assets/img/portfolio/bg_18.jpg"
-                                class="img-fluid" alt="">
-                            <div class="portfolio-info">
-                                <h4>Decoration 1</h4>
-                                <p>Jl. Gatot subroto</p>
-                                <div class="portfolio-links">
-                                    <a href="{{ url('public/landingpage') }}/assets/img/portfolio/bg_18.jpg"
-                                        data-gallery="portfolioGallery" class="portfolio-lightbox"
-                                        title="Rp. 26.000.000,00"><i class="bx bx-plus"></i></a>
-                                    <a href="portfolio-details.html" title="More Details"><i
-                                            class="bx bx-link"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
+                    @include('product')
                 </div>
-
-            </div>
         </section><!-- End Portfolio Section -->
 
         {{-- <!-- ======= Counts Section ======= -->
@@ -643,7 +370,6 @@
         <!-- ======= Testimonials Section ======= -->
         <section id="testimonials" class="testimonials">
             <div class="container" data-aos="zoom-in">
-
                 <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
@@ -674,7 +400,7 @@
                                     <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                                 </p>
                             </div>
-                        </div><!-- End testimonial item -->
+                        </div>
 
                         <div class="swiper-slide">
                             <div class="testimonial-item">
@@ -690,8 +416,7 @@
                                     <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                                 </p>
                             </div>
-                        </div><!-- End testimonial item -->
-
+                        </div>
                         <div class="swiper-slide">
                             <div class="testimonial-item">
                                 <img src="{{ url('public/landingpage') }}/assets/img/testimonials/testimonials-4.jpg"
@@ -706,8 +431,7 @@
                                     <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                                 </p>
                             </div>
-                        </div><!-- End testimonial item -->
-
+                        </div>
                         <div class="swiper-slide">
                             <div class="testimonial-item">
                                 <img src="{{ url('public/landingpage') }}/assets/img/testimonials/testimonials-5.jpg"
@@ -722,7 +446,7 @@
                                     <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                                 </p>
                             </div>
-                        </div><!-- End testimonial item -->
+                        </div>
                     </div>
                     <div class="swiper-pagination"></div>
                 </div>
@@ -731,7 +455,7 @@
         </section><!-- End Testimonials Section -->
 
         <!-- ======= Team Section ======= -->
-        <section id="team" class="team">
+        {{-- <section id="team" class="team">
             <div class="container" data-aos="fade-up">
 
                 <div class="section-title">
@@ -762,7 +486,7 @@
                 </div>
 
             </div>
-        </section><!-- End Team Section -->
+        </section><!-- End Team Section --> --}}
 
         <!-- ======= Contact Section ======= -->
         <section id="contact" class="contact">
