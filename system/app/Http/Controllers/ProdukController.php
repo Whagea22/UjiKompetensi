@@ -16,11 +16,20 @@ class ProdukController extends Controller
         return view('Admin.produk.create');
     }
 
+    function add(){
+        return view('Admin.produk.addprewed');
+    }
+
+    function tambah(){
+        return view('Admin.produk.adddekorasi');
+    }
+
     function store(Request $req)
     {
         $produk = new Produk;
         $produk->jenis_paket = request('jenis_paket');
         $produk->harga = request('harga');
+        $produk->alamat = request('alamat');
         $produk->tgl_input = request('tgl_input');
         $produk->UploadFotoProduk('foto_produk');
         $produk->save();

@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Admin\Admindashboard;
+use App\Http\Controllers\ArtikelController;
 use App\Http\Controllers\ProdukController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\Admin\Profile;
@@ -28,7 +29,9 @@ Route::get('/Admin/user', [UserController::class, 'index']);
 Route::get('/Admin/user/create', [UserController::class, 'create']);
 Route::post('/Admin/user', [UserController::class, 'store']);
 
-
+// Artikel //
+Route::get('/Admin/artikel', [ArtikelController::class, 'index']);
+Route::get('/Admin/artikel/create', [ArtikelController::class, 'create']);
 
 
 Route::prefix('Admin')->group(function(){

@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Http\Controllers\Admin;
+namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
 
-class Artikel extends Controller
+class ArtikelController extends Controller
 {
     function index(){
         return view('Admin.artikel.index');

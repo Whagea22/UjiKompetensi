@@ -7,7 +7,6 @@
     <section class="content">
         <div class="container-fluid">
             <div class="row">
-
                 <!-- Left col -->
                 <section class="col-lg-12">
                     <div class="card-tools mt-2">
@@ -20,8 +19,7 @@
                             </li>
                         </ul>
                     </div>
-                    <!-- Custom tabs (Charts with tabs)-->
-                    <div class="card card-success card-outline mt-2">
+                    <div class="card card-primary card-outline mt-2">
                         <div class="card-header">
                             <div class="card-title">
                                 <h5><b>Tambah Data Produk</b></h5>
@@ -33,15 +31,9 @@
                                 <div class="row">
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <label for="" class="control-label">Jenis Paket</label>
-                                            <select class="form-control" name="jenis_paket" id="">
+                                            <label for="" class="control-label">Jenis Produk</label>
+                                            <select class="form-control" name="jenis_produk" id="">
                                                 <option disabled selected>-Pilih Paket-</option>
-                                                <option value=" Foto Wedding + Decoration"> Foto Wedding + Decoration
-                                                </option>
-                                                <option value="Foto wedding">Foto Wedding
-                                                </option>
-                                                <option value="Foto Pre Wedding">Foto Pre Wedding
-                                                </option>
                                                 <option value="decoration">decoration
                                                 </option>
                                             </select>
@@ -82,6 +74,5 @@
                 <!-- /.Left col -->
             </div>
         </div><!-- /.container-fluid -->
-
     </section>
 @endsection

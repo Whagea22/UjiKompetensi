@@ -7,7 +7,6 @@
     <section class="content">
         <div class="container-fluid">
             <div class="row">
-
                 <!-- Left col -->
                 <section class="col-lg-12">
                     <div class="card-tools mt-2">
@@ -20,8 +19,7 @@
                             </li>
                         </ul>
                     </div>
-                    <!-- Custom tabs (Charts with tabs)-->
-                    <div class="card card-success card-outline mt-2">
+                    <div class="card card-secondary card-outline mt-2">
                         <div class="card-header">
                             <div class="card-title">
                                 <h5><b>Tambah Data Produk</b></h5>
@@ -34,15 +32,9 @@
                                     <div class="col-md-6">
                                         <div class="form-group">
                                             <label for="" class="control-label">Jenis Paket</label>
-                                            <select class="form-control" name="jenis_paket" id="">
+                                            <select class="form-control" name="jenis" id="">
                                                 <option disabled selected>-Pilih Paket-</option>
-                                                <option value=" Foto Wedding + Decoration"> Foto Wedding + Decoration
-                                                </option>
-                                                <option value="Foto wedding">Foto Wedding
-                                                </option>
                                                 <option value="Foto Pre Wedding">Foto Pre Wedding
-                                                </option>
-                                                <option value="decoration">decoration
                                                 </option>
                                             </select>
                                         </div>
@@ -56,8 +48,8 @@
                                     </div>
                                     <div class="col-md-4">
                                         <div class="form-group">
-                                            <label for="" class="control-label">Alamat</label>
-                                            <input type="text" class="form-control" name="alamat" id="">
+                                            <label for="" class="control-label">Tanggal Input</label>
+                                            <input type="date" class="form-control" name="tgl_input" id="">
                                         </div>
                                     </div>
                                     <div class="col-md-4">
@@ -66,22 +58,18 @@
                                             <input type="text" class="form-control" name="harga" id="">
                                         </div>
                                     </div>
-                                    <div class="col-md-4">
-                                        <div class="form-group">
-                                            <label for="" class="control-label">Tanggal Input</label>
-                                            <input type="date" class="form-control" name="tgl_input" id="">
-                                        </div>
-                                    </div>
                                 </div>
                                 <button class="btn btn-primary float-right"><i class="fa fa-upload"></i> Upload </button>
                             </form>
                         </div>
                     </div>
-                    <!-- /.card -->
-                </section>
-                <!-- /.Left col -->
+
             </div>
-        </div><!-- /.container-fluid -->
+            <!-- /.card -->
+    </section>
+    <!-- /.Left col -->
+    </div>
+    </div><!-- /.container-fluid -->
 
     </section>
 @endsection

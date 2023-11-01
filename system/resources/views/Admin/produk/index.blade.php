@@ -8,9 +8,21 @@
                     <div class="card-title">
                         <h3><b>Produk</b></h3>
                     </div>
-                    <a href="{{ url('Admin/produk/create') }}" class="btn btn-success float-right">
+                    <div class="btn-group float-right" role="group">
+                        <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-plus">
+                                Add Produk</i>
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                            <a class="dropdown-item" href="{{ url('Admin/produk/create') }}">Wedding</a>
+                            <a class="dropdown-item" href="{{ url('Admin/produk/addprewed') }}">Pre Wedding</a>
+                            <a class="dropdown-item" href="{{ url('Admin/produk/adddekorasi') }}">decoration</a>
+
+                        </div>
+                    </div>
+                    {{-- <a href="{{ url('Admin/produk/create') }}" class="btn btn-success float-right">
                         <i class="fa fa-plus"> Tambah Produk </i>
-                    </a>
+                    </a> --}}
                 </div>
                 <div class="card-body">
                     <div class="table responsiv">
